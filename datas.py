@@ -44,18 +44,17 @@ class Data:
         if key == 'demand' or key == 'supply':
             super().__setattr__('value', self.demand/self.supply)
 
+#식료품
+Data(name='닭고기'), Data(name='돼지고기'), Data(name='소고기'), Data(name='양고기'), Data(name='오리고기'), Data(name='')
+Data(name='반도체'), Data(name=''), Data(name=''), Data(name='')
+Data(name='소득'), Data(name=''), Data(name='')
 
-chicken = Data(name='닭고기')
-pork = Data(name='돼지고기')
-steak = Data(name='소고기')
-semiconductor = Data(name='반도체')
+
+#
 
 if __name__ == '__main__':
     stock = Data(name='주식')
     pork = Data(name='돼지고기')
     steak = Data(name='소고기')
-    print(stock)
-    stock.supply = 200
-    print(stock)
     print(data_dict)
 

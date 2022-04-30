@@ -62,13 +62,16 @@ def change_attr(name, attr, change, depth=99999999):
         if total_dict[d[0]].id in changed_id_list:
             continue
         data = total_dict[d[0]]
+        t_attr = d[1]
         changed_id_list.append(data.id)
-        if attr == 'demand':
+        if t_attr == 'demand':
             data.demand *= change
-        elif attr == 'supply':
+        elif t_attr == 'supply':
             data.supply *= change
-        elif attr == 'value':
+        elif t_attr == 'value':
             data.value *= change
+        else:
+            raise Exception('정의되지 않은 속성입니다.')
         depth = d[3] - 1
         if depth > 0:
             for selected_data in total_dict[name].effecting[attr]:
@@ -87,3 +90,4 @@ if __name__ == '__main__':
     change_attr('돼지고기', 'demand', 0.5)
     change_attr('반도체', 'value', 0.5)
     print(total_dict['삼성전자'])
+    pass

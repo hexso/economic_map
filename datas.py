@@ -44,9 +44,16 @@ class Data:
         if key == 'demand' or key == 'supply':
             super().__setattr__('value', self.demand/self.supply)
 
+#경재요소
+Data(name='소득'), Data(name='자산'), Data(name='부동산')
+
 #식료품
 Data(name='닭고기'), Data(name='돼지고기'), Data(name='소고기'), Data(name='양고기'), Data(name='오리고기'), Data(name='')
+
+#전자제품
 Data(name='반도체'), Data(name=''), Data(name=''), Data(name='')
+
+#농업
 Data(name='소득'), Data(name=''), Data(name='')
 
 

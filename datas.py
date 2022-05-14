@@ -67,7 +67,7 @@ Data(name='니켈'), Data(name='금'), Data(name='은'), Data(name='구리'), Da
 Data(name='플라스틱')
 
 #자원
-Data(name='원유'), Data(name='천연가스'), Data(name='신재생에너지')
+Data(name='원유'), Data(name='천연가스'), Data(name='신재생에너지'), Data(name='석탄'), Data(name='희토류'),
 Data(name='비료'), Data(name='사료'), Data(name='전기')
 
 #생활용품
@@ -76,6 +76,9 @@ Data(name='책'), Data(name='안경')
 
 #활동
 Data(name='여행')
+
+#제조부품
+Data(name='자동차부품')
 
 #완제품
 Data(name='자동차'), Data(name='타이어')
